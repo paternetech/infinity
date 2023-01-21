@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+*{
+  font-family: 'Oxanium', cursive;
+}
+.anim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    --tw-bg-opacity: 1;
+    width: 100%;
+    background: linear-gradient(to right, rgb(41 37 36 / var(--tw-bg-opacity)) 10%, rgb(28 25 23 / var(--tw-bg-opacity)) 50%, rgb(41 37 36 / var(--tw-bg-opacity)) 90%);
+    animation: loaderSwipeAnim 1s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+    height: 100%;
+}
+
+.animc {
+    width: 100%;
+    /* height: 120; */
+    overflow: hidden;
+    --tw-bg-opacity: 1;
+    background-color: rgb(41 37 36 / var(--tw-bg-opacity))
+    /* background-color: rgb(28 25 23 / var(--tw-bg-opacity)); */
+}
+
+@keyframes loaderSwipeAnim {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+video {
+    width: 100%;
+  }
+  
+  .video-wrapper {
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .video-wrapper:hover .controls {
+    transform: translateY(0%);
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 30px;
+    padding: 14px;
+    width: 100%;
+    max-width: 500px;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transform: translateY(150%);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .actions button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .actions button i {
+    background-color: none;
+    color: white;
+    font-size: 30px;
+  }
+  .velocity {
+    appearance: none;
+    background: none;
+    color: white;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .mute-btn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .mute-btn i {
+    background-color: none;
+    color: white;
+    font-size: 20px;
+  }
+  #text{
+    color: white!important;
+  }
+  li button, li div{
+    color: white!important;
+  }
+  .mob{
+    left: 0!important;
+  }
+  body{
+    background-color: rgb(39, 37, 37);
+  }
+  .input::-webkit-inner-spin-button{
+    appearance: none;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s;
+      -webkit-text-fill-color: rgb(255, 255, 255) !important;
+
+  }
+
+  .input:focus + label {
+      color: rgb(141, 43, 186) !important;
+  }
+
+  
